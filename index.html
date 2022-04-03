@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Fotocollage Scholver 38</title>
+    <body style="background-color:rgba(214, 208, 208, 0.356)" onload="startTime()">
+        
+        <!--Navigation bar-->
+        <div class="topnav">
+            <a style="font-weight:bold" class="current" href="#">Home</a>
+            <a style="font-weight:bold" href="foto's.html">Foto's</a>
+        </div>
+
+        <!--Text-->
+        <div class="text1">
+            Appartement
+        </div>
+        <div class="text2">
+            Bouwnummer: <b>38</b>
+            <p>Type: <b>Scholver</b></p>
+        </div>
+        <div class="text3">
+            Deze website is speciaal gemaakt voor de bouw van het appartement die Inge, Michel en Sem hebben gekocht.
+        </div>
+        <div class="text4">
+            Wat leuk dat jullie een nieuw appartement hebben gekocht! Ik hoop dat het er mooi uit zal gaan zien!
+        </div>
+
+        <!--Time clock-->
+        <div class="time_clock" id="time_clock"></div>
+        <script>
+            function startTime() {
+              const today = new Date();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('time_clock').innerHTML =  h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+            
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+    </body>
+</head>

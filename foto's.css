@@ -1,0 +1,11 @@
+.foto {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.foto p {
+    font-family: monospace;
+    font-size: 20px;
+}

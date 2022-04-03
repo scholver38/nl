@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="foto's.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Fotocollage Scholver 38</title>
+    <body style="background-color:rgba(214, 208, 208, 0.356)" onload="startTime()">
+        
+        <!--Navigation bar-->
+        <div class="topnav">
+            <a style="font-weight:bold" href="index.html">Home</a>
+            <a style="font-weight:bold" class="current" href="#">Foto's</a>
+        </div>
+        
+        <!--Foto's-->
+        <div class="foto">
+            <p>Foto 1:</p>
+            <img src="" alt="Fotocollage" width="center" height="250">
+        </div>
+
+        <!--Time clock-->
+        <div class="time_clock" id="time_clock"></div>
+        <script>
+            function startTime() {
+              const today = new Date();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('time_clock').innerHTML =  h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+            
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+    </body>
+</head>
