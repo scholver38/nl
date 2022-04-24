@@ -1,11 +1,19 @@
-.foto {
-    position: relative;
-    display: inline-block;
-    padding-left: 10px;
-    padding-top: 10px;
+.foto 
+{
+    text-align: center;
 }
 
-.foto p {
+.foto p 
+{
     font-family: monospace;
+    color: white;
     font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 2px solid red;
+}
+
+.foto img 
+{
+    margin-top: 15px;
 }

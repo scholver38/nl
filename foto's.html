@@ -5,38 +5,56 @@
     <link rel="stylesheet" href="foto's.css">
     <link rel="stylesheet" href="index.css">
     <title>Fotocollage Scholver 38</title>
-    <body style="background-color:rgba(214, 208, 208, 0.356)" onload="startTime()">
-        
-        <!--Navigation bar-->
-        <div class="topnav">
-            <a style="font-weight:bold" href="index.html">Home</a>
-            <a style="font-weight:bold" class="current" href="#">Foto's</a>
-        </div>
-        
-        <!--Foto's-->
-        <div class="foto">
-            <p>Foto 1:</p>
-            <img src="" alt="Fotocollage" width="center" height="250">
-        </div>
 
-        <!--Time clock-->
-        <div class="time_clock" id="time_clock"></div>
-        <script>
-            function startTime() {
-              const today = new Date();
-              let h = today.getHours();
-              let m = today.getMinutes();
-              let s = today.getSeconds();
-              m = checkTime(m);
-              s = checkTime(s);
-              document.getElementById('time_clock').innerHTML =  h + ":" + m + ":" + s;
-              setTimeout(startTime, 1000);
-            }
-            
-            function checkTime(i) {
-              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-              return i;
-            }
-        </script>
-    </body>
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <a style="font-weight: bold;" href="index.html">Home</a>
+        <a style="font-weight: bold;" class="current" href="#">Foto's</a>
+    </div>
 </head>
+<body onload="startTime()">
+
+    <!-- Foto's -->
+    
+    <!-- Fotoserie 1 -->
+    <div class="foto">
+        <p>Fotoserie 1:</p>
+        <a href="https://ibb.co/FYzyx02"><img src="https://i.ibb.co/1XTPvd1/1020568.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+        <a href="https://ibb.co/52M13c3"><img src="https://i.ibb.co/4JmFLNL/1020554.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+        <a href="https://ibb.co/k00PC5Q"><img src="https://i.ibb.co/TRRN3Ym/1020564.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+        <a href="https://ibb.co/xh3mF05"><img src="https://i.ibb.co/BLw4nxs/1020567.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+    </div>
+    <!-- Einde Fotoserie 1 -->
+
+    <!-- Fotoserie 2 -->
+    <div class="foto" hidden>
+        <p>Fotoserie 2:</p>
+        <a href="https://ibb.co/FYzyx02"><img src="https://i.ibb.co/1XTPvd1/1020568.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+        <a href="https://ibb.co/52M13c3"><img src="https://i.ibb.co/4JmFLNL/1020554.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+        <a href="https://ibb.co/k00PC5Q"><img src="https://i.ibb.co/TRRN3Ym/1020564.jpg" alt="Sorry, maar de foto kon helaas niet worden geladen!" width="center" height="400"></a>
+    </div>
+    <!-- Einde Fotoserie 1 -->
+
+    
+    <!-- Tijdklok -->
+    <div class="time_clock" id="time_clock"></div>
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('time_clock').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};
+          return i;
+        }
+    </script>
+    <!-- Einde Tijdklok -->
+
+</body>

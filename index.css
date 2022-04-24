@@ -1,28 +1,40 @@
-/* Hiding scrollbars */
-.container1 {
+body 
+{
+  background-color: #241d33;
+}
+
+/* Scrollbars verwijderen */
+.container1 
+{
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
-.container1::-webkit-scrollbar { /* WebKit */
+.container1::-webkit-scrollbar 
+{
   width: 0;
   height: 0;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar 
+{
   display: none;
 }
 
-/* Text in index.html */
-.text1 {
+/* Tekst in index.html */
+.text1 
+{
     text-align: center;
+    color: white;
     font-family: monospace;
     font-size: 35px;
     padding-top: 15px;
     text-decoration: none;
 }
 
-.text2 {
+.text2 
+{
     text-align: center;
+    color: white;
     font-size: 25px;
     font-family: monospace;
     padding-top: 20px;
@@ -30,17 +42,21 @@
     border-bottom: 2px solid red;
 }
 
-.text3 {
+.text3 
+{
   text-align: center;
+  color: white;
   font-size: 20px;
   font-family: monospace;
   padding-top: 100px;
   text-decoration: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(172, 167, 167);
 }
 
-.text4 {
+.text4 
+{
   text-align: left;
+  color: white;
   font-size: 20px;
   font-family: monospace;
   padding-top: 40px;
@@ -49,11 +65,11 @@
 }
 
 .time_clock {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: relative;
   font-size: 20px;
+  color: white;
   font-family: monospace;
-  padding-top: 245px;
-  text-decoration: none;
+  text-decoration: underline;
+  margin-left: 1278px;
+  margin-top: 20px;
 }
