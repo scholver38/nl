@@ -1,3 +1,11 @@
+@media only screen and (max-width: 480px) 
+{
+    .foto img 
+    {
+        margin-top: 15px;
+    }
+}
+
 .foto 
 {
     text-align: center;
