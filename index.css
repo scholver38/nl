@@ -70,8 +70,7 @@ body
   color: white;
   font-family: monospace;
   text-decoration: underline;
-  right: 0;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 5px;
+  padding-left: 5px;
   margin-bottom: 5px;
 }
