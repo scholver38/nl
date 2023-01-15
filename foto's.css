@@ -31,3 +31,9 @@
     padding-left: 8px;
 }
 
+@media only screen and (max-width: 600px) {
+    .foto img {
+        width: 90%;
+        height: auto;
+    }
+}

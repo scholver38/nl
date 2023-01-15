@@ -22,7 +22,7 @@ body {
 .text1 {
   text-align: center;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-family: monospace;
   padding-top: 100px;
   text-decoration: none;    
@@ -32,7 +32,7 @@ body {
   text-align: center;
   color: white;
   font-family: monospace;
-  font-size: 35px;
+  font-size: 30px;
   text-decoration: none;
   padding-top: 25px;
   border-top: 2px solid rgb(192, 19, 245);
@@ -44,9 +44,8 @@ body {
   color: white;
   font-size: 20px;
   font-family: monospace;
-  padding-top: 50px;
+  padding-top: 40px;
   text-decoration: none;
-  
 }
 
 .text4 {
@@ -54,8 +53,7 @@ body {
   color: white;
   font-size: 20px;
   font-family: monospace;
-  padding-top: 40px;
-  padding-left: 5px;
+  padding-top: 17px;
   text-decoration: none;
 }
 
