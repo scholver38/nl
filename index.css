@@ -1,61 +1,57 @@
-body 
-{
+body {
   background-color: #241d33;
 }
 
 /* Scrollbars verwijderen */
-.container1 
-{
+.container1 {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
-.container1::-webkit-scrollbar 
-{
+
+.container1::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-::-webkit-scrollbar 
-{
+
+::-webkit-scrollbar {
   display: none;
 }
 
 /* Tekst in index.html */
-.text1 
-{
-    text-align: center;
-    color: white;
-    font-family: monospace;
-    font-size: 35px;
-    padding-top: 15px;
-    text-decoration: none;
+.text1 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: monospace;
+  padding-top: 100px;
+  text-decoration: none;    
 }
 
-.text2 
-{
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-family: monospace;
-    padding-top: 20px;
-    text-decoration: none;
-    border-bottom: 2px solid red;
+.text2 {
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 35px;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-top: 2px solid rgb(192, 19, 245);
+  border-bottom: 2px solid rgb(192, 19, 245);
 }
 
-.text3 
-{
+.text3 {
   text-align: center;
   color: white;
   font-size: 20px;
   font-family: monospace;
-  padding-top: 100px;
+  padding-top: 50px;
   text-decoration: none;
-  border-bottom: 2px solid rgb(172, 167, 167);
+  
 }
 
-.text4 
-{
-  text-align: left;
+.text4 {
+  text-align: center;
   color: white;
   font-size: 20px;
   font-family: monospace;
@@ -64,13 +60,3 @@ body
   text-decoration: none;
 }
 
-.time_clock {
-  position: relative;
-  font-size: 20px;
-  color: white;
-  font-family: monospace;
-  text-decoration: underline;
-  margin-top: 5px;
-  padding-left: 5px;
-  margin-bottom: 5px;
-}

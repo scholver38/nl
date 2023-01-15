@@ -1,40 +1,42 @@
-/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #3a3a3a;
+    background-color: #3d2c5f;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
-  }
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px #7453b4;
+}
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
+.topnav a {
+    float: right;
     color: rgb(255, 255, 255);
-    background-color: rgb(153, 151, 151);
+    background-color: #7900db;
     text-align: center;
-    padding: 12px 10px;
+    padding: 10px 10px;
     text-decoration: none;
     font-size: 17px;
     border-color: white;
     font-weight: 50;
     font-family: monospace;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: rgb(0, 211, 95);
-    color: rgb(255, 255, 255);
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.current {
-    background-color: #920000;
-    color: rgb(255, 255, 255);
-  }
-*{
-  margin: 0;
-  padding: 0;
+    margin-left: 5px;
+    border-radius: 5px;
 }
+  
+.topnav a:hover {
+    background-color: #7d21c9;
+    color: rgb(255, 255, 255);
+}
+  
+.topnav a.current {
+    background-color: #6800bd;
+    color: rgb(255, 255, 255);
+}
+
+.topnav a.current:hover {
+  background-color: #7d21c9;
+}
+
 .nav{
   font-size: 100;
   font-family: sans-serif;
@@ -43,3 +45,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+

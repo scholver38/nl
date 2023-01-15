@@ -2,6 +2,7 @@
 <html lang="nl-NL">
 
     <head>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="navbar.css">
@@ -9,52 +10,35 @@
 
         <!-- Navigation Bar -->
         <div class="topnav">
-        <a style="font-weight: bold;" class="current" href="#">Home</a>
-        <a style="font-weight: bold;" href="foto's.html">Foto's</a>
+            <a style="font-weight: bold;" href="foto's.html">Foto's</a>
+            <a style="font-weight: bold;" class="current" href="#">Home</a>
         </div>
         <!-- Einde Navigation Bar -->
 
     </head>
 
-    <body onload="startTime()">
+    <body>
 
-    <!-- Tekst -->
-    <div class="text1">
-        \ Appartement Inge, Michel en Sem /
-    </div>
-    <div class="text2">
-        Bouwnummer appartement: <b>38</b>
-        <p>Type appartement: <b>Scholver</b></p>
-    </div>
-    <div class="text3">
-        Deze website is speciaal gemaakt voor de bouw van het appartement die Inge, Michel en Sem hebben gekocht.
-    </div>
-    <div class="text4">
-        Wat leuk dat jullie een nieuw appartement hebben gekocht! Ik hoop dat het er mooi uit zal gaan zien!
-    </div>
-    <!-- Einde Tekst -->
+        <!-- Tekst -->
+        <div class="text1">
+            Bouwnummer appartement: <b>38</b>
+            <p>Type appartement: <b>Scholver</b></p>
+        </div>
 
-    <!-- Tijdklok -->
-    <div class="time_clock" id="time_clock"></div>
-    <script>
-        function startTime() {
-          const today = new Date();
-          let h = today.getHours();
-          let m = today.getMinutes();
-          let s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('time_clock').innerHTML =  h + ":" + m + ":" + s;
-          setTimeout(startTime, 1000);
-        }
+        <div class="text2">
+            \ Appartement Inge, Michel en Sem /
+        </div>
+
+        <div class="text4">
+            Deze website en foto's zijn met veel zorg samengesteld.
+        </div>
         
-        function checkTime(i) {
-          if (i < 10) {i = "0" + i};
-          return i;
-        }
-    </script>
-    <!-- Einde Tijdklok -->
+        <div class="text3">
+            Speciaal gemaakt voor Sem, Michel en Inge.
+        </div>
+        <!-- Einde Tekst -->
 
     </body>
 
 </html>
+
